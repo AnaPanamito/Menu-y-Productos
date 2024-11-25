@@ -8,7 +8,7 @@ public class Main {
     c.quitarProducto("Nose");
 
     Menu m = new Menu();
-    m.agregarCategoria("Xd");
+    m.agregarCategoria("");
     m.eliminarCategoria("Xd");
     m.modificarPrecio("pan", 5.50);
 
