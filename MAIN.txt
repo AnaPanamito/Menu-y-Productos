@@ -1,21 +1,23 @@
 //MAIN
-
 public class Main {
     public static void main(String[] args) {
 
     Categoria c = new Categoria();
-    c.agregarProducto("Nose");
-    c.quitarProducto("Nose");
+    c.agregarProducto("Carnes");
+    c.quitarProducto("Carnes");
 
-    Menu m = new Menu();
-    m.agregarCategoria("Xd");
-    m.eliminarCategoria("Xd");
-    m.modificarPrecio("pan", 5.50);
 
-    Producto p = new Producto(":o", "nose", 4.8);
+
+    Producto p = new Producto("Bolon", " de queso", 1.50);
     p.crearProducto();
     p.eliminarProducto();
-    p.modificarDescripcion("brrr");
+    p.modificarDescripcion("de queso con bebida gratis");
 
-    }
+    Menu m = new Menu();
+    m.agregarCategoria("Bebidas");
+    m.agregarCategoria("Postres");
+    m.eliminarCategoria("Bebidas");
+    m.modificarPrecio("Bolon", 2.00);
+
+    }
 }
