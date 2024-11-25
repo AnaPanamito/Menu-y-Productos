@@ -1,4 +1,3 @@
-//MAIN
 public class Main {
     public static void main(String[] args) {
 
@@ -17,7 +16,7 @@ public class Main {
     m.agregarCategoria("Bebidas");
     m.agregarCategoria("Postres");
     m.eliminarCategoria("Bebidas");
-    m.modificarPrecio("Bolon", 2.00);
+    m.modificarPrecio("Bolon", 2.00);
 
-    }
+    }
 }
