@@ -1,22 +1,23 @@
+//MAIN
 public class Main {
     public static void main(String[] args) {
+        Menu m = new Menu();
+        m.agregarCategoria("Postres");
+        m.agregarCategoria("Bebidas");
+        m.agregarCategoria("Platos fuertes");
+        m.eliminarCategoria("Postres");
 
-    Categoria c = new Categoria();
-    c.agregarProducto("Carnes");
-    c.quitarProducto("Carnes");
+        Categoria c = new Categoria("Postres");
+        c.agregarProducto("Helado");
+        c.agregarProducto("Gelatina");
+        c.quitarProducto("Helado");
 
 
-
-    Producto p = new Producto("Bolon", " de queso", 1.50);
-    p.crearProducto();
-    p.eliminarProducto();
-    p.modificarDescripcion("de queso con bebida gratis");
-
-    Menu m = new Menu();
-    m.agregarCategoria("Bebidas");
-    m.agregarCategoria("Postres");
-    m.eliminarCategoria("Bebidas");
-    m.modificarPrecio("Bolon", 2.00);
+        Producto p = new Producto("Encebollado", "con mucha cebolla", 5.00f);
+        p.modificarPrecio("Helado", 1.00f, 0.50f);
+        p.crearProducto();
+        p.modificarDescripcion("sin cebolla");
+        p.eliminarProducto();
 
     }
 }
