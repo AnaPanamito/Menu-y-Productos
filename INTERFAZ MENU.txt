@@ -1,9 +1,5 @@
-//INTERFAZ MENU
 //IMenu
 public interface IMenu {
-    void agregarCategoria(String categoria);
-    void eliminarCategoria(String categoria);
-    void buscarCategoria();
-    void mostrarMenu();
-    void modificarPrecio(String nombre, double precio);
+    void agregarCategoria(String Categoria);
+    void eliminarCategoria(String Categoria);
 }
