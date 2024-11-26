@@ -1,11 +1,11 @@
 //PRODUCTO
 public class Producto {
-    private String descripcion, nombre;
-    private double precio;
+    private String descripcion;
+    private String nombre;
+    private float precio;
 
-    
     //constructor
-    public Producto(String nombre, String descripcion, double precio) {
+    public Producto(String nombre, String descripcion, float precio) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
@@ -13,15 +13,18 @@ public class Producto {
 
     //metodos
 
-    public void modificarDescripcion(String descripcion){
+    public void modificarDescripcion(String cambiaDescripcion){
         this.descripcion = descripcion;
+        System.out.print("Se a cambiado la descripcion de: "+nombre+" a: "+cambiaDescripcion+"\n");
     }
     public void crearProducto() {
-        System.out.println("\nSe ha creado el producto: " + nombre);
+        System.out.println("Se ha creado el producto: " + nombre+"\n");
     }
-
     public void eliminarProducto() {
-        System.out.println("Se ha eliminado el producto: " + nombre);
+        System.out.println("Se ha eliminado el producto: " + nombre+"\n");
+    }
+    public void modificarPrecio(String producto, float precio, float precioFinal){
+        System.out.print("El precio del "+producto+" a cambiado, de: $"+precio+" a: $"+precioFinal+"\n");
     }
 
 }
