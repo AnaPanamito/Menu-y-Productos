@@ -3,13 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Categoria {
-    //attributes
-    private String nombre;
-    private int cantidad;
-    private List<String> productos;
+    private final List<String> productos;
 
-    // Constructor
-    public Categoria() {
+    //get
+    public Categoria(String nombre) {
         this.productos = new ArrayList<>();
     }
 
@@ -17,16 +14,13 @@ public class Categoria {
     public void agregarProducto(String producto){
         productos.add(producto);
     }
-
-
     public void quitarProducto(String producto){
         if (productos.remove(producto)){
-            System.out.print(producto + " fue eliminado");
+            System.out.print("El producto: " +producto+ " fue eliminado\n");
         }else {
-            System.out.print("\nNo se encontro el producto");
+            System.out.print("\nNo se encontro el producto: "+producto+"\n");
         }
     }
 
-    public void buscarProductos(){}
 
 }
