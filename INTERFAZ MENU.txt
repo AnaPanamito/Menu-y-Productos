@@ -1,5 +1,0 @@
-//IMenu
-public interface IMenu {
-    void agregarCategoria(String Categoria);
-    void eliminarCategoria(String Categoria);
-}
