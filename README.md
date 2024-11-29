@@ -13,7 +13,4 @@ En el diagrama de clases podemos guiarnos fácilmente para la realización del c
 
 DIAGRAMA DE CLASES 
 
-![imagen](https://github.com/user-attachments/assets/0e76f3cb-aa65-40e9-b254-abb77b0b9684)
-
-
-
+![imagen](https://github.com/user-attachments/assets/e8fe63e2-f44d-4a3b-a3cd-e55f6166a398)
